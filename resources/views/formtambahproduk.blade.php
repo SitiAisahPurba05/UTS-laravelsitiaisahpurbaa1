@@ -30,7 +30,43 @@
       
 <div class="col-sm-6">
   <h4>Form Tambah Produk</h4>
+  <form action="" method="GET">
+  <div class="row">
+  <div class="col-sm-4">
+      <label for="">Kode Produk</option>
+      <input type="number" name="kode_produk" class="fore-control" placeholder="Input Kode Produk">
+    </div>
+    <div class="col-sm-4">
+      <label for="">Nama Produk</option>
+      <input type="text" name="nama_produk" class="fore-control" placeholder="Input Nama Produk">
+    </div>
   </div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <label for="">Harga</option>
+      <input type="number" name="Harga">
+    </div>
+          <div class="col-sm-4">
+            <label for="">Jenis Produk</option>
+
+            <select name="Prodi Produk" class="form-control">
+              <option value="">Alat Tulis</option>
+              <option value="">Sembako</option>
+              <option value="">Elektronik</option>
+            </select>
+          </div>
+        </div>
+
+  <div class="col-sm-2">
+  <a href="/produk" class="btn btn-secondary" style="width: 100%">Simpan</a>
+  </div>
+  </div>
+  </form>
+</div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

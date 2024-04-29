@@ -28,7 +28,8 @@ Route::get('produk', function() {
 });
 
 Route::get('formtambahproduk', function() {
-    return view('formtambahproduk');
+    $jenis=['Alat Tulis','Sembako','Elektronik'];
+    $jumlah=count($jenis);
+    return view('formtambahproduk', compact('jenis','jumlah'));
 });
-
 

@@ -48,19 +48,20 @@
       <label for="">Harga</option>
       <input type="number" name="Harga">
     </div>
-          <div class="col-sm-4">
+          <div class="col-sm-10">
             <label for="">Jenis Produk</option>
-
-            <select name="Prodi Produk" class="form-control">
-              <option value="">Alat Tulis</option>
-              <option value="">Sembako</option>
-              <option value="">Elektronik</option>
-            </select>
-          </div>
+           <select name="Pilih produk"class="form-control">
+            <?php $nilai_awal = 0; ?>
+            @while ($nilai_awal<$jumlah)
+            <option value>{{$jenis[$nilai_awal]}}</option>
+            <?php $nilai_awal++?>
+            @endwhile
+           </select>
+        </tr>
         </div>
 
-  <div class="col-sm-2">
-  <a href="/produk" class="btn btn-secondary" style="width: 100%">Simpan</a>
+  <div class ="col-sm-2">
+  <a href="/produk" class ="btn btn-secondary" style="width: 100%">Simpan</a>
   </div>
   </div>
   </form>
